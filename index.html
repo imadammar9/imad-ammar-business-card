@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Imad Ammar | TADAWA Healthcare</title>
+<meta name="description" content="Imad Ammar, Business Development Manager at TADAWA Healthcare, Amman. Telemedicine integrations, clinic operations and B2B partnerships.">
+<meta name="theme-color" content="#0a343d">
+<meta property="og:title" content="Imad Ammar | TADAWA Healthcare">
+<meta property="og:description" content="Business Development Manager at TADAWA Healthcare. Save my contact or get in touch.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://imadammar9.github.io/imad-ammar-business-card/">
+<meta property="og:image" content="https://imadammar9.github.io/imad-ammar-business-card/assets/imad-ammar.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"Madani Arabic";src:url(assets/MadaniArabic-Regular.ttf) format("truetype");font-weight:300 500;font-display:swap}
+@font-face{font-family:"Madani Arabic";src:url(assets/MadaniArabic-Bold.ttf) format("truetype");font-weight:600 900;font-display:swap}
+:root{
+  --ink:#231f20;--teal:#0e8098;--teal-deep:#115e6d;--teal-800:#0e4a56;--teal-900:#0a343d;
+  --teal-50:#eef6f8;--teal-100:#dcedf1;--teal-200:#b4dae3;--teal-300:#7fbfcd;--teal-400:#3f9eb2;--white:#fff;
+  --on:rgba(255,255,255,1);--on-muted:rgba(255,255,255,.78);--line:rgba(255,255,255,.14);--line-strong:rgba(255,255,255,.28);
+  --gradient:linear-gradient(135deg,#0e8098 0%,#115e6d 100%);
+  --ground:linear-gradient(160deg,#115e6d 0%,#0e4a56 34%,#0a343d 100%);
+  --panel:rgba(255,255,255,.055);
+  --shadow-3:0 8px 20px rgba(35,31,32,.08),0 24px 48px rgba(17,94,109,.14);
+  --focus:0 0 0 3px rgba(127,191,205,.55);
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --sans:"Readex Pro","Madani Arabic","Segoe UI",system-ui,sans-serif;
+  --arabic:"Madani Arabic","Alexandria","Noto Sans Arabic",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;background:#0a343d}
+body{font-family:var(--sans);color:var(--on);background:#0a343d;font-size:16px;line-height:1.5;letter-spacing:.03em;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.ic{width:1em;height:1em;display:block;flex:none}
+a:focus-visible,button:focus-visible{outline:none;box-shadow:var(--focus)}
+
+.card{max-width:480px;margin:0 auto;background:var(--ground);min-height:100vh;position:relative;overflow:hidden;padding-bottom:0}
+@media (min-width:560px){body{padding:40px 16px}.card{min-height:0;border-radius:32px;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.35);padding-bottom:0}}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;padding:24px 24px 0;position:relative;z-index:2}
+.top .logo{height:52px;width:auto;display:block}
+.top-actions{display:flex;gap:10px}
+.icon-btn{width:44px;height:44px;border-radius:999px;border:1px solid var(--line-strong);display:grid;place-items:center;font-size:20px;transition:background .2s var(--ease),border-color .2s var(--ease)}
+.icon-btn:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+/* hero */
+.hero{position:relative;padding:44px 24px 0}
+.pulse-wrap{position:absolute;left:0;right:0;top:34px;height:150px;pointer-events:none}
+.pulse-wrap img{position:absolute;left:-36%;top:0;width:210%;max-width:none}
+.pulse-base{opacity:.28;animation:draw 1.8s var(--ease) .2s both}
+.pulse-beam{opacity:.95;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 50%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 50%,transparent 100%);-webkit-mask-size:22% 100%;mask-size:22% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;animation:beam 4.2s linear 2s infinite both}
+@keyframes draw{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes beam{0%{-webkit-mask-position:-30% 0;mask-position:-30% 0}60%,100%{-webkit-mask-position:130% 0;mask-position:130% 0}}
+
+.avatar-ring{position:relative;width:148px;height:148px;border-radius:50%;padding:5px;background:var(--teal-900);border:1.5px solid var(--teal-300);z-index:1}
+.avatar-ring::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:1px solid var(--line)}
+.avatar{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.status{position:absolute;right:6px;bottom:10px;z-index:2;width:18px;height:18px;border-radius:50%;background:var(--teal-300);border:3px solid var(--teal-900)}
+
+.eyebrow{display:inline-flex;align-items:center;gap:8px;margin-top:28px;font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-300)}
+.eyebrow::before{content:"";width:24px;height:1.5px;background:var(--teal-300)}
+h1{font-size:clamp(34px,10.6vw,44px);line-height:1.05;font-weight:700;letter-spacing:-.01em;margin-top:12px;white-space:nowrap}
+@media (min-width:560px){h1{font-size:44px}}
+.role{font-size:17px;font-weight:400;color:var(--on);margin-top:16px;line-height:1.35}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 14px;border-radius:999px;border:1px solid var(--line-strong);font-size:13px;color:var(--on-muted)}
+.chip .ic{color:var(--teal-300);font-size:15px}
+
+/* quick actions */
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:28px 24px 0}
+.q{display:flex;flex-direction:column;align-items:center;gap:12px;padding:18px 0 14px;border-radius:24px;background:var(--panel);border:1px solid var(--line);font-size:11px;font-weight:500;letter-spacing:.08em;color:var(--on-muted);transition:transform .25s var(--ease),background .25s var(--ease),border-color .25s var(--ease)}
+.orb{position:relative;width:54px;height:54px;border-radius:50%;border:1px solid var(--line-strong);display:grid;place-items:center;transition:border-color .25s var(--ease)}
+.orb::before{content:"";position:absolute;inset:-1px;border-radius:50%;border:1.5px solid transparent;border-top-color:var(--teal-300);border-right-color:var(--teal-300);transform:rotate(-20deg);transition:transform .6s var(--ease)}
+.orb::after{content:"";position:absolute;top:3px;right:3px;width:6px;height:6px;border-radius:50%;background:var(--teal-300)}
+.q:hover .orb::before{transform:rotate(160deg)}
+.q .ic{font-size:28px;color:#fff}
+.q:hover{transform:translateY(-3px);background:rgba(255,255,255,.1);border-color:var(--teal-300)}
+
+section{padding:44px 24px 0}
+.sh{display:flex;align-items:baseline;gap:12px;margin-bottom:16px}
+.sh h2{font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-300)}
+.sh i{flex:1;height:1px;background:var(--line)}
+.about p{font-size:20px;line-height:1.4;font-weight:300;color:#fff;letter-spacing:.01em}
+.about p{text-wrap:pretty;max-width:38ch}
+.about p+p{font-size:15px;line-height:1.65;color:var(--on-muted);margin-top:16px;letter-spacing:.015em;font-weight:400;max-width:none}
+
+.rows{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--panel)}
+.row{display:flex;align-items:center;gap:6px;padding:0 12px 0 0;transition:background .2s var(--ease);position:relative}
+.row-main{display:flex;align-items:center;gap:14px;padding:15px 0 15px 16px;flex:1;min-width:0}
+.row-main::after{content:"";position:absolute;inset:0}
+.copy{position:relative;z-index:1;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:18px;color:var(--on-muted);border:1px solid var(--line);transition:background .2s var(--ease),color .2s var(--ease)}
+.copy:hover{background:rgba(255,255,255,.12);color:#fff}
+.chev{padding:0 12px}
+.row+.row{border-top:1px solid var(--line)}
+.row:hover{background:rgba(255,255,255,.07)}
+/*t*/.tile{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong);border-top-color:var(--teal-300);border-right-color:var(--teal-300);color:#fff;display:grid;place-items:center;font-size:22px;flex:none}
+.rt{display:flex;flex-direction:column;min-width:0;flex:1}
+.rl{font-size:11px;font-weight:500;color:var(--teal-300);letter-spacing:.14em;text-transform:uppercase}
+.rv{font-weight:400;font-size:15px;letter-spacing:.01em;overflow-wrap:anywhere}
+.chev{color:var(--on-muted);font-size:16px;transition:transform .2s var(--ease),color .2s var(--ease)}
+.row:hover .chev{transform:translate(2px,-2px);color:#fff}
+
+.svcs{list-style:none;display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -24px;padding:0 24px 4px;scrollbar-width:none}
+.svcs::-webkit-scrollbar{display:none}
+.svc{flex:0 0 78%;scroll-snap-align:center;padding:22px;border:1px solid var(--line);border-radius:24px;background:var(--panel);min-height:236px;display:flex;flex-direction:column}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:auto;padding-bottom:26px}
+.num{font-size:44px;line-height:1;font-weight:200;letter-spacing:0;color:var(--teal-300)}
+.svc-ic{width:48px;height:48px;border-radius:50%;border:1px solid var(--line-strong);border-top-color:var(--teal-300);border-right-color:var(--teal-300);display:grid;place-items:center;font-size:24px}
+.svc h3{font-size:18px;font-weight:700;line-height:1.25;letter-spacing:.01em}
+.svc p{font-size:14px;color:var(--on-muted);margin-top:8px;line-height:1.6}
+.hint{display:flex;gap:6px;justify-content:center;margin-top:14px}
+.hint b{width:6px;height:6px;border-radius:50%;background:var(--line-strong);transition:width .25s var(--ease),background .25s var(--ease)}
+.hint b.on{width:22px;border-radius:999px;background:var(--teal-300)}
+
+.links{display:grid;gap:12px}
+.btn{height:56px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:500;font-size:16px;letter-spacing:.03em;border:1.5px solid transparent;transition:background .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease),transform .2s var(--ease)}
+.btn .ic{font-size:20px}
+.btn.white{background:#fff;color:var(--teal-900)}
+.btn.white:hover{background:var(--teal-100)}
+.btn.line{border-color:var(--line-strong);color:#fff}
+.btn.line:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.btn.teal{background:var(--teal);color:#fff}
+.btn.teal:hover{background:#0c6f84}
+
+footer{margin-top:52px;text-align:center;padding:0 24px 44px;position:relative;overflow:hidden}
+footer .pulse{display:block;width:190%;max-width:none;margin-left:-62%;opacity:.28}
+footer .fp{position:relative}
+footer .pulse.pulse-beam{position:absolute;top:0;left:0;opacity:.95;animation-delay:.6s}
+.slogan{font-family:var(--arabic);font-weight:700;font-size:26px;line-height:1.5;letter-spacing:0;margin-top:10px}
+.url{display:inline-block;margin-top:10px;font-size:12px;letter-spacing:.32em;color:var(--on-muted)}
+
+.save{padding:12px 24px 0}.save .btn{width:100%;display:flex}.btn .ic{font-size:22px}
+/* (dock removed) */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:10;padding:14px 16px calc(14px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(10,52,61,0) 0,#0a343d 46%);pointer-events:none}
+.dock .btn{pointer-events:auto;width:100%;max-width:448px;margin:0 auto;display:flex;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+@media (min-width:560px){.dock{position:static;background:none;padding:28px 24px 0}.dock .btn{box-shadow:none;max-width:none}footer{padding-bottom:40px}}
+
+/* QR dialog */
+dialog{border:0;border-radius:32px;padding:28px;width:min(340px,calc(100vw - 32px));margin:auto;background:#fff;color:var(--ink);text-align:center;box-shadow:var(--shadow-3)}
+dialog::backdrop{background:rgba(10,52,61,.82)}
+dialog h3{font-size:20px;font-weight:700;color:var(--teal-900);letter-spacing:0}
+dialog p{font-size:14px;color:#5b5658;margin-top:4px}
+.qr{width:100%;height:auto;display:block;margin:20px 0}
+dialog .btn{width:100%;height:48px;color:#fff}
+
+.toast{position:fixed;left:50%;bottom:28px;z-index:20;transform:translate(-50%,16px);background:#fff;color:var(--teal-900);font-size:14px;font-weight:500;padding:12px 20px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .2s var(--ease),transform .2s var(--ease)}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* motion */
+.rv-up{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rv-up.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}.d5{transition-delay:.4s}
+.no-js .rv-up{opacity:1;transform:none}
+@media (max-width:359px){h1{font-size:32px}.quick{gap:6px}.top .logo{height:44px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv-up{opacity:1;transform:none}.pulse-beam{display:none}}
+</style>
+</head>
+<body class="no-js">
+<main class="card">
+  <div class="top">
+    <img class="logo" src="assets/tadawa-logo-white.svg" alt="TADAWA تداوىٰ" width="107" height="52">
+    <div class="top-actions">
+      <button class="icon-btn" id="qr-open" type="button" aria-label="Show QR code"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M104,40H56A16,16,0,0,0,40,56v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,104,40Zm0,64H56V56h48v48Zm0,32H56a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,104,136Zm0,64H56V152h48v48ZM200,40H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,64H152V56h48v48Zm-64,72V144a8,8,0,0,1,16,0v32a8,8,0,0,1-16,0Zm80-16a8,8,0,0,1-8,8H184v40a8,8,0,0,1-8,8H144a8,8,0,0,1,0-16h24V144a8,8,0,0,1,16,0v8h24A8,8,0,0,1,216,160Zm0,32v16a8,8,0,0,1-16,0V192a8,8,0,0,1,16,0Z"/></svg></button>
+      <button class="icon-btn" id="share" type="button" aria-label="Share this card"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M176,160a39.89,39.89,0,0,0-28.62,12.09l-46.1-29.63a39.8,39.8,0,0,0,0-28.92l46.1-29.63a40,40,0,1,0-8.66-13.45l-46.1,29.63a40,40,0,1,0,0,55.82l46.1,29.63A40,40,0,1,0,176,160Zm0-128a24,24,0,1,1-24,24A24,24,0,0,1,176,32ZM64,152a24,24,0,1,1,24-24A24,24,0,0,1,64,152Zm112,72a24,24,0,1,1,24-24A24,24,0,0,1,176,224Z"/></svg></button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="pulse-wrap" aria-hidden="true">
+      <img class="pulse-base" src="assets/pulse-line-white.svg" alt="">
+      <img class="pulse-beam" src="assets/pulse-line-white.svg" alt="">
+    </div>
+    <div class="avatar-ring rv-up">
+      <img class="avatar" src="assets/imad-ammar.jpg" alt="Portrait of Imad Ammar" width="136" height="136">
+      <span class="status" aria-hidden="true"></span>
+    </div>
+    <p class="eyebrow rv-up d1">TADAWA Healthcare</p>
+    <h1 class="rv-up d2">Imad Ammar</h1>
+    <p class="role rv-up d3">Business Development Manager</p>
+    <div class="meta rv-up d4">
+      <span class="chip"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128,24a80,80,0,0,0-80,80c0,72,80,128,80,128s80-56,80-128A80,80,0,0,0,128,24Zm0,112a32,32,0,1,1,32-32A32,32,0,0,1,128,136Z" opacity="0.2"/><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg>Amman, Jordan</span>
+      <span class="chip"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M200,72V184a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H192A8,8,0,0,1,200,72Z" opacity="0.2"/><path d="M251.77,73a8,8,0,0,0-8.21.39L208,97.05V72a16,16,0,0,0-16-16H32A16,16,0,0,0,16,72V184a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V159l35.56,23.71A8,8,0,0,0,248,184a8,8,0,0,0,8-8V80A8,8,0,0,0,251.77,73ZM192,184H32V72H192V184Zm48-22.95-32-21.33V116.28L240,95Z"/></svg>Telemedicine</span>
+      <span class="chip"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M136,32V216H40V85.35a8,8,0,0,1,3.56-6.66l80-53.33A8,8,0,0,1,136,32Z" opacity="0.2"/><path d="M240,208H224V96a16,16,0,0,0-16-16H144V32a16,16,0,0,0-24.88-13.32L39.12,72A16,16,0,0,0,32,85.34V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM208,96V208H144V96ZM48,85.34,128,32V208H48ZM112,112v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm-32,0v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm0,56v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Zm32,0v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Z"/></svg>B2B partnerships</span>
+    </div>
+  </header>
+
+  <nav class="quick rv-up d5" aria-label="Quick actions">
+    <a class="q" href="tel:+962793113991"><span class="orb"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M223.94,174.08A48.33,48.33,0,0,1,176,216,136,136,0,0,1,40,80,48.33,48.33,0,0,1,81.92,32.06a8,8,0,0,1,8.3,4.8l21.13,47.2a8,8,0,0,1-.66,7.53L89.32,117a7.93,7.93,0,0,0-.54,7.81c8.27,16.93,25.77,34.22,42.75,42.41a7.92,7.92,0,0,0,7.83-.59l25-21.3a8,8,0,0,1,7.59-.69l47.16,21.13A8,8,0,0,1,223.94,174.08Z" opacity="0.2"/><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg></span>Call</a>
+    <a class="q" href="https://wa.me/962793113991" target="_blank" rel="noopener"><span class="orb"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128,32A96,96,0,0,0,44.89,176.07L32.42,213.46a8,8,0,0,0,10.12,10.12l37.39-12.47A96,96,0,1,0,128,32Zm24,152a80,80,0,0,1-80-80,32,32,0,0,1,32-32l16,32-12.32,18.47a48.19,48.19,0,0,0,25.85,25.85L152,136l32,16A32,32,0,0,1,152,184Z" opacity="0.2"/><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.62-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"/></svg></span>WhatsApp</a>
+    <a class="q" href="mailto:imad.ammar@tadawa.com"><span class="orb"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,56l-96,88L32,56Z" opacity="0.2"/><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg></span>Email</a>
+    <a class="q" href="https://www.linkedin.com/in/imad-abdel-hafez/" target="_blank" rel="noopener"><span class="orb"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,40V216a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8H216A8,8,0,0,1,224,40Z" opacity="0.2"/><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></svg></span>LinkedIn</a>
+  </nav>
+
+  <div class="save rv-up d5">
+    <a class="btn white" href="imad-ammar.vcf" download="Imad Ammar.vcf"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M208,32H64a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V40A8,8,0,0,0,208,32ZM136,144a32,32,0,1,1,32-32A32,32,0,0,1,136,144Z" opacity="0.2"/><path d="M83.19,174.4a8,8,0,0,0,11.21-1.6,52,52,0,0,1,83.2,0,8,8,0,1,0,12.8-9.6A67.88,67.88,0,0,0,163,141.51a40,40,0,1,0-53.94,0A67.88,67.88,0,0,0,81.6,163.2,8,8,0,0,0,83.19,174.4ZM112,112a24,24,0,1,1,24,24A24,24,0,0,1,112,112Zm96-88H64A16,16,0,0,0,48,40V64H32a8,8,0,0,0,0,16H48v40H32a8,8,0,0,0,0,16H48v40H32a8,8,0,0,0,0,16H48v24a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V40A16,16,0,0,0,208,24Zm0,192H64V40H208Z"/></svg>Save contact</a>
+  </div>
+
+  <section class="about rv-up">
+    <div class="sh"><h2>About</h2><i></i></div>
+    <p>Bridging the gap between technology and modern healthcare.</p>
+    <p>As a Business Development Manager, I specialize in telemedicine integrations, clinic operations, and strategic B2B partnerships across Jordan and beyond.</p>
+    <p>Whether you're looking to integrate digital health solutions or explore synergies in the HealthTech space, I'm always open to connecting. Reach out to discuss how we can shape the future of healthcare.</p>
+  </section>
+
+  <section class="rv-up">
+    <div class="sh"><h2>Contact</h2><i></i></div>
+    <div class="rows">
+      <div class="row"><a class="row-main" href="tel:+962793113991"><span class="tile"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M223.94,174.08A48.33,48.33,0,0,1,176,216,136,136,0,0,1,40,80,48.33,48.33,0,0,1,81.92,32.06a8,8,0,0,1,8.3,4.8l21.13,47.2a8,8,0,0,1-.66,7.53L89.32,117a7.93,7.93,0,0,0-.54,7.81c8.27,16.93,25.77,34.22,42.75,42.41a7.92,7.92,0,0,0,7.83-.59l25-21.3a8,8,0,0,1,7.59-.69l47.16,21.13A8,8,0,0,1,223.94,174.08Z" opacity="0.2"/><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg></span><span class="rt"><span class="rl">Mobile and WhatsApp</span><span class="rv">+962 79 311 3991</span></span></a><button class="copy" type="button" data-copy="+962793113991" aria-label="Copy mobile and whatsapp"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"/></svg></button></div>
+      <div class="row"><a class="row-main" href="mailto:imad.ammar@tadawa.com"><span class="tile"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,56l-96,88L32,56Z" opacity="0.2"/><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg></span><span class="rt"><span class="rl">Email</span><span class="rv">imad.ammar@tadawa.com</span></span></a><button class="copy" type="button" data-copy="imad.ammar@tadawa.com" aria-label="Copy email"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"/></svg></button></div>
+      <div class="row"><a class="row-main" href="https://tadawa.com/" target="_blank" rel="noopener"><span class="tile"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" opacity="0.2"/><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm88,104a87.61,87.61,0,0,1-3.33,24H174.16a157.44,157.44,0,0,0,0-48h38.51A87.61,87.61,0,0,1,216,128ZM102,168H154a115.11,115.11,0,0,1-26,45A115.27,115.27,0,0,1,102,168Zm-3.9-16a140.84,140.84,0,0,1,0-48h59.88a140.84,140.84,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.84a157.44,157.44,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154,88H102a115.11,115.11,0,0,1,26-45A115.27,115.27,0,0,1,154,88Zm52.33,0H170.71a135.28,135.28,0,0,0-22.3-45.6A88.29,88.29,0,0,1,206.37,88ZM107.59,42.4A135.28,135.28,0,0,0,85.29,88H49.63A88.29,88.29,0,0,1,107.59,42.4ZM49.63,168H85.29a135.28,135.28,0,0,0,22.3,45.6A88.29,88.29,0,0,1,49.63,168Zm98.78,45.6a135.28,135.28,0,0,0,22.3-45.6h35.66A88.29,88.29,0,0,1,148.41,213.6Z"/></svg></span><span class="rt"><span class="rl">Website</span><span class="rv">www.tadawa.com</span></span></a><span class="chev"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span></div>
+      <div class="row"><a class="row-main" href="https://www.linkedin.com/in/imad-abdel-hafez/" target="_blank" rel="noopener"><span class="tile"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,40V216a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8H216A8,8,0,0,1,224,40Z" opacity="0.2"/><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></svg></span><span class="rt"><span class="rl">LinkedIn</span><span class="rv">Imad Ammar</span></span></a><span class="chev"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span></div>
+      <div class="row"><a class="row-main" href="https://www.instagram.com/tadawa.jo" target="_blank" rel="noopener"><span class="tile"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M176,32H80A48,48,0,0,0,32,80v96a48,48,0,0,0,48,48h96a48,48,0,0,0,48-48V80A48,48,0,0,0,176,32ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" opacity="0.2"/><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm64-84a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></svg></span><span class="rt"><span class="rl">Instagram</span><span class="rv">@tadawa.jo</span></span></a><span class="chev"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sh rv-up"><h2>Our services</h2><i></i></div>
+    <ul class="svcs" id="svcs"><li class="svc rv-up"><div class="svc-top"><span class="num">01</span><span class="svc-ic"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M136,32V216H40V85.35a8,8,0,0,1,3.56-6.66l80-53.33A8,8,0,0,1,136,32Z" opacity="0.2"/><path d="M240,208H224V96a16,16,0,0,0-16-16H144V32a16,16,0,0,0-24.88-13.32L39.12,72A16,16,0,0,0,32,85.34V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM208,96V208H144V96ZM48,85.34,128,32V208H48ZM112,112v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm-32,0v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm0,56v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Zm32,0v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Z"/></svg></span></div><h3>Corporate B2B Partnerships</h3><p>Seamless integration of our telemedicine ecosystem into corporate insurance plans via strategic TPA partnerships.</p></li><li class="svc rv-up"><div class="svc-top"><span class="num">02</span><span class="svc-ic"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M160,48V216H128V160H80v56H48V48a8,8,0,0,1,8-8h96A8,8,0,0,1,160,48Z" opacity="0.2"/><path d="M248,208h-8V128a16,16,0,0,0-16-16H168V48a16,16,0,0,0-16-16H56A16,16,0,0,0,40,48V208H32a8,8,0,0,0,0,16H248a8,8,0,0,0,0-16Zm-24-80v80H168V128ZM56,48h96V208H136V160a8,8,0,0,0-8-8H80a8,8,0,0,0-8,8v48H56Zm64,160H88V168h32ZM72,96a8,8,0,0,1,8-8H96V72a8,8,0,0,1,16,0V88h16a8,8,0,0,1,0,16H112v16a8,8,0,0,1-16,0V104H80A8,8,0,0,1,72,96Z"/></svg></span></div><h3>Integrated Physical Clinics</h3><p>Access to state-of-the-art physical hubs for specialized consultations, advanced laboratory diagnostics, and radiology.</p></li><li class="svc rv-up"><div class="svc-top"><span class="num">03</span><span class="svc-ic"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M240,160a32,32,0,1,1-32-32A32,32,0,0,1,240,160Z" opacity="0.2"/><path d="M220,160a12,12,0,1,1-12-12A12,12,0,0,1,220,160Zm-4.55,39.29A48.08,48.08,0,0,1,168,240H144a48.05,48.05,0,0,1-48-48V151.49A64,64,0,0,1,40,88V40a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H56V88a48,48,0,0,0,48.64,48c26.11-.34,47.36-22.25,47.36-48.83V48H136a8,8,0,0,1,0-16h24a8,8,0,0,1,8,8V87.17c0,32.84-24.53,60.29-56,64.31V192a32,32,0,0,0,32,32h24a32.06,32.06,0,0,0,31.22-25,40,40,0,1,1,16.23.27ZM232,160a24,24,0,1,0-24,24A24,24,0,0,0,232,160Z"/></svg></span></div><h3>Proactive Primary Care</h3><p>Dedicated family doctor services and personalized care plans designed for early intervention.</p></li><li class="svc rv-up"><div class="svc-top"><span class="num">04</span><span class="svc-ic"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M200,72V184a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H192A8,8,0,0,1,200,72Z" opacity="0.2"/><path d="M251.77,73a8,8,0,0,0-8.21.39L208,97.05V72a16,16,0,0,0-16-16H32A16,16,0,0,0,16,72V184a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V159l35.56,23.71A8,8,0,0,0,248,184a8,8,0,0,0,8-8V80A8,8,0,0,0,251.77,73ZM192,184H32V72H192V184Zm48-22.95-32-21.33V116.28L240,95Z"/></svg></span></div><h3>Digital Telemedicine Solutions</h3><p>24/7 remote video consultations and secure digital patient records that track medical history and prescriptions.</p></li></ul>
+    <div class="hint" id="hint" aria-hidden="true"><b class="on"></b><b></b><b></b><b></b></div>
+  </section>
+
+  <section class="links rv-up">
+    <a class="btn teal" href="https://linktr.ee/tadawa" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M192,56V200H64V56Z" opacity="0.2"/><path d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16ZM72,64H184V192H72Zm8-32h96a8,8,0,0,1,8,8v8H72V40A8,8,0,0,1,80,32Zm96,192H80a8,8,0,0,1-8-8v-8H184v8A8,8,0,0,1,176,224Z"/></svg>Download the TADAWA app</a>
+    <a class="btn line" href="https://drive.google.com/file/d/1dUj2le4MKUiayra2Sd9xENl28bFiun7f/view" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M208,88H152V32Z" opacity="0.2"/><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-42.34-61.66a8,8,0,0,1,0,11.32l-24,24a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L120,164.69V120a8,8,0,0,1,16,0v44.69l10.34-10.35A8,8,0,0,1,157.66,154.34Z"/></svg>Download brochure</a>
+  </section>
+
+  <footer>
+    <div class="fp" aria-hidden="true"><img class="pulse" src="assets/pulse-line-white.svg" alt=""><img class="pulse pulse-beam" src="assets/pulse-line-white.svg" alt=""></div>
+    <p class="slogan" lang="ar" dir="rtl">طبيبك الخاص أينما كنت!</p>
+    <a class="url" href="https://tadawa.com/" target="_blank" rel="noopener">www.tadawa.com</a>
+  </footer>
+</main>
+
+<dialog id="qr">
+  <h3>Imad Ammar</h3>
+  <p>Scan to open this card</p>
+  <svg class="qr" role="img" aria-label="QR code for this page" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" class="segno"><path class="qrline" stroke="#0a343d" d="M0 0.5h7m2 0h1m6 0h1m2 0h2m2 0h1m2 0h7m-33 1h1m5 0h1m2 0h1m5 0h2m3 0h1m1 0h1m3 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m4 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h2m4 0h3m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h4m1 0h3m2 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h1m12 0h2m3 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h3m3 0h1m1 0h1m1 0h2m1 0h2m1 0h1m-25 1h1m1 0h5m5 0h3m2 0h1m4 0h3m1 0h5m-29 1h3m3 0h1m1 0h2m1 0h1m3 0h5m1 0h1m2 0h2m1 0h2m1 0h1m-30 1h4m3 0h1m2 0h5m2 0h3m1 0h1m3 0h1m1 0h1m-30 1h2m4 0h1m1 0h3m1 0h1m2 0h1m2 0h4m3 0h1m1 0h3m-31 1h2m1 0h2m1 0h2m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m-32 1h1m1 0h1m2 0h1m1 0h3m2 0h1m2 0h1m1 0h4m1 0h2m2 0h1m2 0h1m1 0h2m-32 1h2m1 0h3m1 0h1m2 0h1m2 0h3m1 0h1m1 0h3m2 0h2m2 0h3m-32 1h2m1 0h3m1 0h4m1 0h2m1 0h1m2 0h1m2 0h7m1 0h2m-31 1h9m4 0h1m1 0h1m1 0h1m4 0h1m1 0h2m1 0h2m3 0h1m-30 1h1m1 0h1m1 0h1m5 0h1m2 0h1m2 0h3m1 0h1m2 0h2m1 0h2m1 0h1m-32 1h1m1 0h1m1 0h3m2 0h3m2 0h2m1 0h1m6 0h4m1 0h2m-31 1h1m2 0h1m3 0h5m2 0h1m2 0h5m1 0h2m1 0h5m-32 1h5m1 0h4m1 0h4m3 0h2m2 0h1m2 0h1m1 0h3m-30 1h1m1 0h1m1 0h1m4 0h5m1 0h2m1 0h6m2 0h1m3 0h1m1 0h1m-33 1h1m1 0h1m1 0h1m1 0h3m1 0h2m8 0h2m4 0h1m2 0h3m-32 1h1m1 0h1m1 0h1m2 0h1m1 0h1m3 0h2m1 0h1m2 0h1m1 0h2m2 0h1m2 0h3m1 0h1m-33 1h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m2 0h1m4 0h1m1 0h5m2 0h1m-24 1h1m1 0h1m2 0h2m1 0h4m1 0h2m1 0h1m3 0h1m1 0h1m1 0h1m-33 1h7m2 0h3m1 0h1m1 0h1m1 0h1m2 0h1m2 0h2m1 0h1m1 0h1m1 0h2m-32 1h1m5 0h1m1 0h1m1 0h3m1 0h1m1 0h3m2 0h4m3 0h4m-32 1h1m1 0h3m1 0h1m1 0h2m1 0h4m1 0h1m2 0h1m4 0h6m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h1m6 0h1m2 0h4m1 0h3m2 0h2m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h3m1 0h5m1 0h1m2 0h1m2 0h2m1 0h2m-31 1h1m5 0h1m3 0h1m1 0h1m1 0h2m2 0h1m1 0h2m1 0h1m4 0h3m-31 1h7m1 0h1m1 0h1m2 0h3m1 0h4m2 0h2m1 0h2m3 0h1"/></svg>
+  <button class="btn teal" id="qr-close" type="button">Close</button>
+</dialog>
+<div class="toast" id="toast" role="status">Link copied</div>
+<script>
+(function () {
+  document.body.classList.remove('no-js');
+  var els = document.querySelectorAll('.rv-up');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+    els.forEach(function (e) { io.observe(e); });
+  } else els.forEach(function (e) { e.classList.add('in'); });
+
+  var sv = document.getElementById('svcs'), dots = document.querySelectorAll('#hint b');
+  sv.addEventListener('scroll', function () {
+    var i = Math.round(sv.scrollLeft / (sv.scrollWidth - sv.clientWidth) * (dots.length - 1));
+    dots.forEach(function (d, k) { d.classList.toggle('on', k === i); });
+  }, { passive: true });
+
+  var dlg = document.getElementById('qr');
+  document.getElementById('qr-open').addEventListener('click', function () { dlg.showModal(); });
+  document.getElementById('qr-close').addEventListener('click', function () { dlg.close(); });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+
+  var toast = document.getElementById('toast'), tt;
+  function say(m) { toast.textContent = m; toast.classList.add('on'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('on'); }, 1800); }
+  async function copy(text, msg) { try { await navigator.clipboard.writeText(text); say(msg); } catch (e) { say(text); } }
+  document.querySelectorAll('.copy').forEach(function (b) { b.addEventListener('click', function () { copy(b.dataset.copy, 'Copied ' + b.dataset.copy); }); });
+  document.getElementById('share').addEventListener('click', async function () {
+    if (navigator.share) { try { await navigator.share({ title: 'Imad Ammar | TADAWA Healthcare', url: location.href }); return; } catch (e) { if (e && e.name === 'AbortError') return; } }
+    copy(location.href, 'Link copied');
+  });
+})();
+</script>
+</body>
+</html>
